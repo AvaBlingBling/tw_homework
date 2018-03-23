@@ -32,8 +32,12 @@ export default class Agent extends Component {
       const inputs = input.split(',');
       inputs.forEach((pInput, k) => {
         if (agent.resources.indexOf(pInput) > -1) {
+          //添加相同资源
           message.info('the same resources');
           return
+        } else if(!pInput) {
+          //输入为空
+          return;
         };
         agent.resources.push(pInput);
       });
@@ -83,8 +87,8 @@ export default class Agent extends Component {
             </Popover>
             {agent.resources && agent.resources.length ? <span>
               <span className="separated">|</span><span>Resources: </span>
-              {agent.resources.map((r, j) => <span key={j} className="nowrap">
-                {r}
+              {agent.resources.map((r, j) => <span key={j} className="nobreak">
+                <span>{r}</span>
                 <i className="far fa-times-circle icon-separated" onClick={this.removeResource.bind(this, j)}/>
               </span>)}
             </span> : ''}

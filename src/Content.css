@@ -1,6 +1,6 @@
 .y-content {
   position: relative;
-  min-height: calc(100vh - 128px);
+  min-height: calc(100vh - 150px);
 }
 .Cruise {
   position: absolute;
@@ -75,6 +75,9 @@
   position: relative;
   background: #fffbb8;
 }
+.agent-list-item:hover {
+  background: #faf49c;
+}
 .agent-list-item div {
   display: inline-block;
   vertical-align: middle;
@@ -85,6 +88,9 @@
 }
 .agent-list-item-deny {
   background: #d5ebbd;
+}
+.agent-list-item-deny:hover {
+  background: #c8eba0;
 }
 .agent-list-item-avatar {
   width: 50px;
@@ -104,8 +110,8 @@
   color: #848484;
   margin: 0 15px 0 2px;
 }
-.nowrap {
-  white-space: nowrap;
+.nobreak {
+  display: inline-block;
 }
 .deny {
   width: 50px;

@@ -18,7 +18,7 @@ class Content extends Component {
   }
 
   callback(key) {
-    console.log(key);
+    // console.log(key);
   }
 
   getSummary = (agents) => {
@@ -87,7 +87,7 @@ const agents = [
     style: 'idle',
     ip: '192.168.1.2',
     path: '/var/lib/cruise-agent',
-    resources: ['ubuntu', 'firefox', 'core-duo'],
+    resources: ['ubuntu', 'firefox', 'core-duo', 'sfkdlf', 'firefox1', 'firefox2', 'firefox3', 'firefox4'],
     deny: true,
   }, {
     title: 'sdgdfgdfgdf02.thoughtworks.com',
