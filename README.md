@@ -10,5 +10,7 @@
 
 2. 打开方式2
 
+## npm run build
+
 ## serve -s build
 
