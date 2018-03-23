@@ -41,7 +41,7 @@ class Content extends Component {
     return (
       <div className="y-content">
         <h1 className="Cruise">Cruise</h1>
-        <Tabs onChange={this.callback} type="card" defaultActiveKey="3" className="font14">
+        <Tabs onChange={this.callback} type="card" defaultActiveKey="3" className="font14" style={{width: '100%'}}>
           <TabPane tab="DASHBORD" key="1">Content of Tab Pane 1</TabPane>
           <TabPane tab="MY CRUISE" key="2">Content of Tab Pane 2</TabPane>
           <TabPane tab="AGENTS" key="3">
@@ -61,14 +61,14 @@ class Content extends Component {
                 <div className="summary">
                   <h3 className="summary-title">Summary</h3>
                   {summary && Object.keys(summary).map((key, k) => <div className="summary-list-item" key={k}>
-                    <p>{key}</p>
-                    <p>{summary[key]}</p>
+                    <div>{key}</div>
+                    <div>{summary[key]}</div>
                   </div>)}
                 </div>
                 <div className="summary">
                   <h3 className="summary-title">History</h3>
                   {history.map((item, k) => <div className="summary-list-item" key={k}>
-                    <p>sdgdfgdfgdf02/Acceptance_test</p>
+                    <div>sdgdfgdfgdf02/Acceptance_test</div>
                   </div>)}
                 </div>
               </div>

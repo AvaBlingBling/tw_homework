@@ -1,5 +1,6 @@
 .y-content {
   position: relative;
+  min-height: calc(100vh - 128px);
 }
 .Cruise {
   position: absolute;
@@ -16,14 +17,24 @@
   min-width: 70px;
   text-align: center;
   background: #b5b5b5;
-  border: 1px solid #333;
-  border-left: 0;
+  border-color: #333;
 }
 .ant-radio-button-wrapper:first-child {
-  border-left: 1px solid #333;
+  border-color: #333;
 }
-.ant-radio-button-wrapper-checked {
+.ant-radio-button-wrapper:not(:first-child)::before {
+  background-color: #333!important;
+  opacity: 1;
+}
+.ant-radio-button-wrapper-checked:hover{
+  color: #40a9ff;
+  border-color: #333;
+  box-shadow: none;
+}
+.ant-radio-button-wrapper-checked,
+.ant-radio-button-wrapper-checked:first-child {
   background: #fff;
+  color: #333;
 }
 .border3px {
   border: 3px solid #333;
@@ -55,8 +66,8 @@
   padding: 0 20px;
 }
 .agent-list-item {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   padding: 10px;
   border: 1px solid #333;
   border-radius: 16px;
@@ -64,12 +75,16 @@
   position: relative;
   background: #fffbb8;
 }
+.agent-list-item div {
+  display: inline-block;
+  vertical-align: middle;
+}
 .agent-list-item i {
   font-weight: 900;
   cursor: pointer;
 }
 .agent-list-item-deny {
-  background: #c3e79d;
+  background: #d5ebbd;
 }
 .agent-list-item-avatar {
   width: 50px;
@@ -110,15 +125,32 @@
 .summary-list-item {
   line-height: 30px;
 }
-.summary-list-item p {
+.summary-list-item div {
   width: 50%;
   display: inline-block;
 }
 
 .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
   border: 3px solid #333;
+  line-height: 34px;
 }
 .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
   background: #909090;
-  color: white;  
+  color: white;
+  border-bottom: 3px solid #909090;
+}
+.ant-popover-arrow {
+  background: rgb(222, 240, 203);
+  width: 16px;
+  height: 16px;
+  border-color: #ebb82d transparent transparent #ebb82d;
+  border-style: solid;
+  border-width: 2px;
+  top: 3px!important;
+  left: 50px!important;
+}
+.ant-popover-inner {
+  background: rgb(222, 240, 203);
+  border: 2px solid #ebb82d;
+  border-radius: 9px;
 }

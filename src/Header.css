@@ -5,6 +5,7 @@
 .header-menu {
   float: right;
   line-height: 64px;
+  list-style: none;
 }
 .header-menu>li {
   float: left;

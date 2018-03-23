@@ -52,11 +52,11 @@ export default class Agent extends Component {
     const { visible, input, agent } = this.state;
     const content = (
       <div>
-        <p>(Separate multiple resources name with commas)</p>
-        <Input style={{ margin: '5px 0' }} onChange={this.onChangeInput} value={input} />
+        <div>(Separate multiple resources name with commas)</div>
+        <Input style={{ margin: '1em 0' }} onChange={this.onChangeInput} value={input} />
         <div>
-          <Button type="primary" ghost style={{ marginRight: 10 }} onClick={this.addAgent}>Add Resources</Button>
-          <Button type="primary" ghost onClick={this.hide}>Close</Button>
+          <Button style={{ marginRight: 10 }} onClick={this.addAgent}>Add Resources</Button>
+          <Button onClick={this.hide}>Close</Button>
         </div>
       </div>
     );
