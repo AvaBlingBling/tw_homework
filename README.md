@@ -1,16 +1,16 @@
 ## git clone https://github.com/AvaBlingBling/tw_homework.git
 
-1. 打开方式1
+## 1. 打开方式1
 
-## npm install
+ npm install
 
-## npm start 
+ npm start 
 
-## localhost:3000
+ localhost:3000
 
-2. 打开方式2
+## 2. 打开方式2
 
-## npm run build
+ npm run build
 
-## serve -s build
+ serve -s build
 
