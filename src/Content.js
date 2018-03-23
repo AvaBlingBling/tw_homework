@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Radio, Avatar, Icon, Popover, Input, Button } from 'antd';
+import { Tabs, Radio } from 'antd';
 
 import Agent from './Agent';
 
