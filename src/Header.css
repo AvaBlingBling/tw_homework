@@ -1,0 +1,16 @@
+.y-header {
+  height: 64px;
+  line-height: 64px;
+}
+.header-menu {
+  float: right;
+  line-height: 64px;
+}
+.header-menu>li {
+  float: left;
+  min-width: 72px;
+  margin-left: 20px; 
+}
+.header-menu>li>i {
+  transform: scale(1.5);
+}

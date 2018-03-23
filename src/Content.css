@@ -1,0 +1,121 @@
+.y-content {
+  position: relative;
+}
+.Cruise {
+  position: absolute;
+}
+/* tab选项 */
+.ant-tabs-bar {
+  margin-bottom: 0;
+}
+.ant-tabs-nav-scroll {
+  text-align: right;
+}
+/* 单选按钮 */
+.ant-radio-button-wrapper {
+  min-width: 70px;
+  text-align: center;
+  background: #b5b5b5;
+  border: 1px solid #333;
+  border-left: 0;
+}
+.ant-radio-button-wrapper:first-child {
+  border-left: 1px solid #333;
+}
+.ant-radio-button-wrapper-checked {
+  background: #fff;
+}
+.border3px {
+  border: 3px solid #333;
+}
+.agents-title {
+  background: #909090;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  border-bottom: 3px solid #333;
+}
+.white-title {
+  color: white;
+}
+.agents-content-list {
+  border-right: 2px solid #333;
+  display: inline-block;
+  width: 70%;
+}
+.agents-content-right {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  border-left: 2px solid #333;
+  margin-left: -2px;
+  padding: 0 20px;
+}
+.agent-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 16px;
+  margin: 20px;
+  position: relative;
+  background: #fffbb8;
+}
+.agent-list-item i {
+  font-weight: 900;
+  cursor: pointer;
+}
+.agent-list-item-deny {
+  background: #c3e79d;
+}
+.agent-list-item-avatar {
+  width: 50px;
+}
+.agent-list-item-content {
+  width: calc(100% - 100px);
+}
+.agent-list-item-content-title {
+  margin-bottom: 4px;
+  line-height: 22px;
+}
+.separated {
+  margin: 3px;
+  color: #a5a2a2;
+}
+.icon-separated {
+  color: #848484;
+  margin: 0 15px 0 2px;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.deny {
+  width: 50px;
+}
+.deny-icon {
+  margin-right: 2px;
+  transform: scale(1.2);
+}
+
+.summary {
+  margin: 10px 0;
+}
+.summary-title {
+  border-bottom: 1px solid #909090;
+  line-height: 30px;
+}
+.summary-list-item {
+  line-height: 30px;
+}
+.summary-list-item p {
+  width: 50%;
+  display: inline-block;
+}
+
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  border: 3px solid #333;
+}
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+  background: #909090;
+  color: white;  
+}

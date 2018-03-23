@@ -1,0 +1,8 @@
+.y-footer {
+  height: 64px;
+  line-height: 64px;
+  width: 100%;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+}
